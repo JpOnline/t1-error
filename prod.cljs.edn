@@ -1,0 +1,3 @@
+{:main t1.main
+ :npm-deps false
+ :infer-externs true}
