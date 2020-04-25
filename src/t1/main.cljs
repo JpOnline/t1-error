@@ -1,13 +1,13 @@
 (ns ^:figwheel-hooks t1.main
   (:require
-    [Button :as material-button]
+    [button :as material-button]
     [number-format]
     [goog.dom :as gdom]
-    [reagent.dom :as reagent-dom]
+    [reagent.core :as reagent]
     ))
 
 (defn ^:after-load render-view []
-  (reagent-dom/render
+  (reagent/render-component
     [:<>
      [:h1 "Teste 1"] ;; This works.
 

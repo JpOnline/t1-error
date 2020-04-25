@@ -1,9 +1,9 @@
 // Remember to run `npx webpack --mode=development` everytime editing this file
 
-// import React from 'react';
-// import ReactDOM from 'react-dom';
-// window["React"] = React;
-// window["ReactDOM"] = ReactDOM;
+import React from 'react';
+import ReactDOM from 'react-dom';
+window["React"] = React;
+window["ReactDOM"] = ReactDOM;
 
 import NumberFormat from 'react-number-format';
 window["number-format"] = NumberFormat;
