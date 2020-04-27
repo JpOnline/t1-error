@@ -3,11 +3,11 @@
     [button :as material-button]
     [number-format]
     [goog.dom :as gdom]
-    [reagent.core :as reagent]
+    [reagent.dom :as reagent-dom]
     ))
 
 (defn ^:after-load render-view []
-  (reagent/render-component
+  (reagent-dom/render
     [:<>
      [:h1 "Teste 1"] ;; This works.
 
@@ -15,7 +15,8 @@
       {:suffix "x"
        :decimalScale 3}]
 
-     [:> material-button ;; This one does not work 😓
+     ;; This one does not work with figwheel-main version 0.2.1 😓
+     [:> material-button
         {:variant "outlined"}
         "Teste 1"]]
 
